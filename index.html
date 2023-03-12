@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <script src="https://kit.fontawesome.com/d087934b18.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <!-- <img src="Images/logo.png" class="logo"> -->
+        <h1 class="logo"><span>D</span>hananjoy.</h1>
+        <ul id="sidebar">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div id="header">
+        <div class="container">
+            <div class="header-text">
+                <h2>Hi I'm</h2>
+                <h1><span>D</span>hananjoy <span>M</span>ahata</h1>
+                <h2>Web Developer</h2>
+                <h2>From India</h2>
+                <a href="Images/my-cv.pdf" class="btn " download>Download My CV</a>
+
+            </div>
+        </div>
+    </div>
+
+<!-----------About------------>
+
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p><span></span> Hi there! My name is Dhananjoy Mahata, and I'm a web developer based in Kolkata, West Bengal, India. I'm passionate about creating
+                    engaging, interactive, and user-friendly websites that deliver a seamless experience for users.</p>
+                    
+                    <p><span></span> I started my journey in web development two years ago, and have since honed my skills in a range of
+                    technologies, including HTML, CSS, JavaScript, and more. I take a collaborative approach to my work, and enjoy working
+                    closely with clients and other developers to bring their ideas to life.</p>
+                    
+                    <p><span></span> Thanks for taking the time to learn a little bit about me. I'm excited to hear about your next project and explore how
+                    we can work together to make it a success!</p>
+                    <div class="tab-titles">
+                        <h3 class="tab-links active-link" id="Skills-link" onclick="showtab('Skills')">Skills</h3>
+                        <h3 class="tab-links" id="Experience-link" onclick="showtab('Experience')">Experience</h3>
+                        <h3 class="tab-links" id="Education-link" onclick="showtab('Education')">Education</h3>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>C++ & DSA</span><br>Data structure & algorithms with C++</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Web Development Training at ET Institute</li>
+                            <li><span>2023 - 2024</span><br>Internship at Ekart ecommerce</li>
+                            <li><span>2022 - 2023</span><br>Internship at Cuvute</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>BE : 2021 - 2025</span><br>Jadavpur University</li>
+                            <li><span>12 <sup>th</sup> : 2020</span><br>Jhargram K.K. Institution</li>
+                            <li><span>10 <sup>th</sup> : 2018</span><br>Jhargram K.K. Institution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!---------Services---------->
+<div id="Services">
+    <div class="container">
+        <h2 class="sub-title">My Services</h2>
+        <div class="Services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>We offer full-stack web development services, using the latest technologies and best practices to build engaging and
+                intuitive websites that meet your unique needs and requirements. Our team of experienced developers will work closely
+                with you to understand your goals and deliver a customized solution that's optimized for speed, security, and
+                scalability.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Development</h2>
+                <p>We specialize in creating customized and user-friendly mobile applications for both iOS and Android platforms. Our team
+                of experienced developers uses cutting-edge technologies and tools to design and build apps that meet your unique needs
+                and specifications.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                <i class="fa-solid fa-hand-holding-hand"></i>
+                <h2>Mentorship</h2>
+                <p>Our coding mentorship service provides personalized guidance and support for individuals who are looking to improve
+                their coding skills and advance their careers in the tech industry. Our experienced mentors work one-on-one with you to
+                identify your strengths and weaknesses, develop a customized learning plan, and provide ongoing feedback and
+                encouragement as you work towards your goals.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------------Portfolio---------------------->
+<div id="Portfolio">
+    <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png" alt="image"><div class="layer">
+                    <h3>Social media App</h3>
+                    <p>The app connects you to the tallented people around the world. Download it from playstore.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png" alt="image">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Discover new music and stream your favorite songs on the go with our user-friendly and customizable music app.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png" alt="image">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Shop from anywhere at any time with our easy-to-use online shopping app, featuring a wide selection of products and
+                    convenient delivery options.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----------------Contact-------------------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h2 class="sub-title">Contact Me</h2>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 987654321</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Images/my-cv.pdf" class="btn " download>Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Phone" placeholder="Mobile No" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <a href="" class="btn " download>Submit</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <!-- <p>Copyright © Dhananjoy. Made with <i class="fa-solid fa-heart"></i> </p> -->
+        <p>© 2023 <i class="fa-solid fa-heart"></i> Dhananjoy Mahata. All rights reserved. </p>
+    </div>
+</div>
+
+<!----------Java Script---------->
+<script src="script.js"></script>
+</body>
+</html>
